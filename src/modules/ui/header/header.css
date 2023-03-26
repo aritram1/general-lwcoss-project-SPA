@@ -13,3 +13,7 @@
     height: var(--header-height);
 }
 
+.header_middle{
+    font-size: var(--header-sitename-size);
+}
+

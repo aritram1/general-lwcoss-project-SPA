@@ -1,18 +1,23 @@
 :host{
     /* styling hooks */
-    --clock-color : blue; 
+    --clock-color : black; 
     --clock-font-size : 3vw; /* Styling hook, this will be overridden in clock.css */
+    
     --app-margin-size : 6vw;
+    
+    /* --app-bgcolor : linear-gradient(rgb(104, 29, 29), rgb(209, 164, 58)); */
+    --app-bgcolor : linear-gradient(grey, white);
+    
     --header-height: 8vw;
-    --header-color: red;
-    --content-color: blue;
-    --footer-color: yellow;
+    --header-sitename-size: 6vw;
+
+    --center-margin-top_bottom : 3vh;
+
+    --footer-height: 5vw;
+    --footer-items-margin : 5px;    
 }
 
 .app{
-    background: linear-gradient(rgb(104, 29, 29), rgb(209, 164, 58));
-    margin: 0 var(--app-margin-size); 
-}
-.app-content > div{
-    margin: 1vw;
+    background: var(--app-bgcolor);
+    margin: 0 var(--app-margin-size); /* top and bottom margin is 0*/
 }

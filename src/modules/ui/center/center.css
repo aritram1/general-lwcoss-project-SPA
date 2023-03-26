@@ -1,3 +1,4 @@
-div{
-    border: 1px solid purple;
+.center{
+    height: var(--center-height);
+    margin: var(--center-margin-top_bottom) 0;
 }

@@ -1,5 +1,11 @@
 <template>
     <div class="footer">
-        lorem ipsum
+        <div class="footerItems">
+            <template for:each={footerItems} for:item="each">
+                <span class="footer_item" key={each.id}>
+                    | {each.label} | 
+                </span>
+            </template>
+        </div>
     </div>
 </template>
