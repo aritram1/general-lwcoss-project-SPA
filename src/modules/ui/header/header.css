@@ -1,0 +1,11 @@
+.header{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    border: 2px solid blue;
+}
+
+.header > div {
+    border: 1px solid red;
+    margin: 1vh;
+}
+
