@@ -1,11 +1,20 @@
+:host{
+    --header-height: 12vw;
+    --logo-height: 10vw;
+}
 .header{
     display: grid;
     grid-template-columns: 20% 60% 20%;
     border: 2px solid blue;
+    height: var(--header-height);
 }
 
-.header > div {
+.header > div{
     border: 1px solid red;
-    margin: 1vh;
+    height: var(--logo-height);
+}
+
+.header_middle > img {
+    height: 10vw;
 }
 
