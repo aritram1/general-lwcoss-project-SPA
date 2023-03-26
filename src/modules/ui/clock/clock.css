@@ -1,0 +1,15 @@
+:host{
+    --clock-font-size : 2vw; /* Styling hook overridden */
+}
+.clock{
+    background: linear-gradient(red, blue, 135deg);
+}
+.time{
+    font-size: var(--clock-font-size);
+    color: var(--clock-color); /* styling hook from parent app.css */
+    background: linear-gradient(red, blue, 135deg);
+}
+.center{
+    display: grid;
+    place-items: center;
+}

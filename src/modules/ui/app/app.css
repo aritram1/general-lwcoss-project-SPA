@@ -1,20 +1,18 @@
-div{
-    border: 1px solid black;
+:host{
+    /* styling hooks */
+    --clock-color : blue; 
+    --clock-font-size : 3vw; /* Styling hook, this will be overridden in clock.css */
+    --app-margin-size : 6vw;
+    --header-height: 8vw;
+    --header-color: red;
+    --content-color: blue;
+    --footer-color: yellow;
 }
+
 .app{
+    background: linear-gradient(rgb(104, 29, 29), rgb(209, 164, 58));
+    margin: 0 var(--app-margin-size); 
+}
+.app-content > div{
     margin: 1vw;
 }
-.app > div{
-    margin: 1vw;
-}
-/*
-.top{
-
-}
-.mid{
-
-}
-.bottom{
-
-}
-*/
