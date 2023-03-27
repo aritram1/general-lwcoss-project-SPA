@@ -3,7 +3,7 @@
         <div class="footerItems">
             <template for:each={footerItems} for:item="each">
                 <span class="footer_item" key={each.id}>
-                    | {each.label} | 
+                    <a href="#">{each.label}</a>
                 </span>
             </template>
         </div>

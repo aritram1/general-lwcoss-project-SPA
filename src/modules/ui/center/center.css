@@ -2,3 +2,7 @@
     height: var(--center-height);
     margin: var(--center-margin-top_bottom) 0;
 }
+
+.center > input[type='button']{
+    margin-left: 45%;
+}

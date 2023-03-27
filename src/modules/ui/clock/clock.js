@@ -7,6 +7,7 @@ export default class Clock extends LightningElement {
             let now = new Date();
             this.ampm = now.getHours() <= 12 ? 'AM' : 'PM';
             this.hour = this.ampm == 'AM' ? now.getHours() : now.getHours() - 12;
+            if(this.hour == 0) this.hour = 12;
             this.min = now.getMinutes().toString().padStart(2, '0');
             this.sec = now.getSeconds().toString().padStart(2, '0');
         }, 1000);

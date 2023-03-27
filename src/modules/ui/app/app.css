@@ -1,6 +1,6 @@
 :host{
     /* styling hooks */
-    --clock-color : black; 
+    --clock-color : white; 
     --clock-font-size : 3vw; /* Styling hook, this will be overridden in clock.css */
     
     --app-margin-size : 6vw;
@@ -12,9 +12,13 @@
     --header-sitename-size: 6vw;
 
     --center-margin-top_bottom : 3vh;
+    --chess-square-size : 5vw;
 
     --footer-height: 5vw;
     --footer-items-margin : 5px;    
+
+    --chess-rank-width : 50px;
+    --chess-rank-height : 20px;
 }
 
 .app{
