@@ -1,9 +1,9 @@
 import { LightningElement } from 'lwc';
 
 export default class Center extends LightningElement {
-    handleClick(){
+    handleReset(){
         let chessBoard = this.template.querySelector('ui-chess');
-        chessBoard?.generateBoard();
+        chessBoard?.resetBoard();
     }
 
     connectedCallback(){
@@ -12,5 +12,10 @@ export default class Center extends LightningElement {
 
     renderedCallback(){
         console.log('Inside center renderedCallback');
+    }
+
+    handleDiscolightStart(){
+        let discolight = this.template.querySelector('ui-discolight');
+        discolight?.start();
     }
 }

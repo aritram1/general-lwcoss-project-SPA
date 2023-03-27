@@ -1,12 +1,19 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, track } from 'lwc';
 
-export default class Chess extends LightningElement {
+export default class Discolight extends LightningElement {
     
-    board = [];
-    
-    // get showboard(){
-    //     return this.board?.length !== 0;
-    // }
+    handleSquareClick(e){
+        console.log(e.target);
+        let item = this.board?.find(id => e.target.key);
+        //item.color = 'red';
+        console.log('inside handleSquareClick!');
+    }
+
+    start(){
+        console.log('inside start');
+    }
+
+    @track board = [];
     
     connectedCallback(){
         console.log('Inside chess connectedCallback');

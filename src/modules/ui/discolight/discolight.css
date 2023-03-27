@@ -1,0 +1,56 @@
+.container{
+    margin : 2vw 25%;
+}
+
+.x-axis{
+    display: flex;
+    /* margin : var(--square-size); */
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(8, var(--square-size));
+    grid-template-rows: repeat(8, var(--square-size));
+}
+
+.black{
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    height: var(--square-size);
+    width: var(--square-size);
+    background-color: black;
+}
+
+.white{
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    height: var(--square-size);
+    width: var(--square-size);
+    background-color: white;
+}
+
+.file{
+    display: grid;
+    grid-auto-flow: row;
+    margin-top : var(--file-margin-top);
+}
+.file > div{
+    height: var(--file-height);
+    width: var(--file-width);
+    text-align: center;
+    font-size: var(--file-font-size);
+}
+
+.rank{
+    display: flex;
+    /* margin-left: var(--rank-margin-left); */
+    text-align: center;
+}
+
+.rank > div{
+    width: var(--rank-width);
+    height: var(--rank-height);
+    text-align: center;
+    font-size: var(--rank-font-size);
+}
