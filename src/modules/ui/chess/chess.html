@@ -7,25 +7,25 @@
         <div class="x-axis">
             <div class="board">
                 <template for:each={board} for:item="square">
-                    <div class="square" key={square.name}>
-                        {square.label}
+                    <div class={square.color} key={square.id}>
+                        {square.name}
                     </div>
                 </template>
             </div>
             
-            <div class="rank">
-                <div>a</div>
-                <div>b</div>
-                <div>c</div>
-                <div>d</div>
-                <div>e</div>
-                <div>f</div>
-                <div>g</div>
-                <div>h</div>
+            <div class="file">
+                <div>8</div>
+                <div>7</div>
+                <div>6</div>
+                <div>5</div>
+                <div>4</div>
+                <div>3</div>
+                <div>2</div>
+                <div>1</div>
             </div>
         </div>
         <div class="rank">
-            <div>ra</div>
+            <div>a</div>
             <div>b</div>
             <div>c</div>
             <div>d</div>
@@ -35,6 +35,4 @@
             <div>h</div>
         </div>
     </div>
-    
-    
 </template>

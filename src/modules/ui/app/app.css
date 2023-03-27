@@ -12,13 +12,20 @@
     --header-sitename-size: 6vw;
 
     --center-margin-top_bottom : 3vh;
-    --chess-square-size : 5vw;
+    --square-size : 5vw;
 
     --footer-height: 5vw;
-    --footer-items-margin : 5px;    
+    --footer-items-margin : 1vw;    
 
-    --chess-rank-width : 50px;
-    --chess-rank-height : 20px;
+    --rank-height : var(--square-size);
+    --rank-width : var(--square-size);
+    --rank-margin-left : 15px;
+    --rank-font-size : 2.2vw;
+
+    --file-margin-top : 1.4vw;
+    --file-height : var(--square-size);
+    --file-width : var(--square-size);
+    --file-font-size : 2.2vw;
 }
 
 .app{

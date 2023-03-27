@@ -24,13 +24,17 @@ export default class Chess extends LightningElement {
         for(let j=7; j>=0; j--){
             for(let i=0; i<8; i++){
                 _board.push({
-                    'name' : i + '' + j, //identifier
+                    'id' : i + '' + j, //identifier
                     'y' : i, 'x' : j,   // x, y locations
                     'r' : j+'', 'f' : String.fromCharCode(97+i), //rank and file locations
                     'label' : String.fromCharCode(97+i) + '' + (j+1),
-                    'occupied' : false, 'by' : '', //occupied info
-                    'score' : 0,
-                    'controlledBy' : [], 'vulnerableTo' : []
+                    'gameInfo' : {
+                        'occupied' : false, 
+                        'by' : '', //occupied info
+                        'score' : 0,
+                        'controlledBy' : [], 'vulnerableTo' : [],
+                    },
+                    'color' : (i+j)%2 === 0 ? 'black' : 'white'
                 });
             }
         }
